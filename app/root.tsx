@@ -41,6 +41,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+// anything you want to be persistent across all routes should be placed here
+// maybe I could put a navbar/header here
 export default function App() {
   return <Outlet />;
 }
