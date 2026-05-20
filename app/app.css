@@ -1,15 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* colors */
+
+  /* text */
+  --color-primary: oklch(0.2178 0 0);
+  --color-secondary: oklch(0.3979 0 0);
+  --color-accent: oklch(0.4552 0.2314 263.16);
+
+  /* backgrounds */
+  --color-light: oklch(0.9702 0 0);
+
+  /* sizing */
+  --text-md: 1rem;
+
+  /* font */
+  --font-outfit: Outfit, "sans-serif";
+  --font-chiron: Chiron, "serif";
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@font-face{
+  font-family: Outfit;
+  src: url("../public/fonts/Outfit/Outfit-VariableFont_wght.ttf")
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+@font-face{
+  font-family: Chiron;
+  src: url("../public/fonts/Chiron_GoRound_TC/ChironGoRoundTC-VariableFont_wght.ttf")
 }
