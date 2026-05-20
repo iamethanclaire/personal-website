@@ -1,18 +1,25 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
-import { NavLink } from "react-router";
+import  { NavLink } from "react-router";
+import NameAnimation from "../composables/NameAnimation"
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Ethan Claire | Home" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
 export default function Home() {
   return (
-    <div>
-      <p>Welcome to the Home Page</p>
+    <div className="flex h-screen flex-col items-center justify-center bg-dark">
+      <NameAnimation />
+      {/* <button className="mt-4"> 
+        <NavLink to="/projects"
+        className="font-outfit text-primary"
+      >
+        See Portfolio
+      </NavLink> </button> */}
     </div>
+
   );
 }
