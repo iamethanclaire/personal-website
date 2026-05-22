@@ -1,17 +1,18 @@
 import type { Route } from "./+types/home";
+import ProjectsTitle from "../composables/projects/ProjectsTitle";
 
 export function meta({ }: Route.MetaArgs) {
-  return [
-    { title: "Ethan Claire | Projects" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+    return [
+        { title: "Ethan Claire | Projects" },
+        { name: "description", content: "Welcome to React Router!" },
+    ];
 }
 
 
 export default function Projects() {
     return (
-        <div>
-            <p>Welcome to the Projects Page</p>
+        <div className="flex h-screen flex-col items-center justify-center bg-dark">
+            <ProjectsTitle />
         </div>
     );
 };
