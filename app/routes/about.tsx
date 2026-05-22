@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import AboutTitle from "../composables/about/AboutTitle"
+import AboutDescription from "../composables/about/AboutDescription"
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -9,8 +10,9 @@ export function meta({ }: Route.MetaArgs) {
 }
 export default function About() {
     return (
-        <div className="flex h-screen flex-col items-center justify-center bg-dark">
+        <div className="bg-light">
             <AboutTitle />
+            <AboutDescription />
         </div>
     );
 };

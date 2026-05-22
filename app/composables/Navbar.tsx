@@ -2,7 +2,7 @@ import { NavLink } from "react-router"
 
 export default function Navbar() {
   return (
-    <nav className="fixed font-chiron text-md navbar flex justify-between p-12 w-full flex-row">
+    <nav className="fixed font-chiron text-md navbar flex justify-between p-12 bg-light w-full flex-row z-9999">
 
       <span className="text-primary">
         <NavLink to="/">
@@ -13,7 +13,7 @@ export default function Navbar() {
       <span className="flex gap-5 items-center">
         <NavLink to="/"
           className={({ isActive }) =>
-            isActive ? "text-accent-1" : "text-secondary"
+            isActive ? "text-home" : "text-secondary"
           }
         >
           Home
@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <NavLink to="/about"
           className={({ isActive }) =>
-            isActive ? "text-accent-1" : "text-secondary"
+            isActive ? "text-about" : "text-secondary"
           }
         >
           About
@@ -29,7 +29,7 @@ export default function Navbar() {
 
         <NavLink to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-accent-1" : "text-secondary"
+            isActive ? "text-projects" : "text-secondary"
           }
         >
           Projects
@@ -37,7 +37,7 @@ export default function Navbar() {
 
         <NavLink to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-accent-1" : "text-secondary"
+            isActive ? "text-contact" : "text-secondary"
           }
         >
           Contact

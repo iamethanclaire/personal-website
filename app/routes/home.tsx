@@ -10,7 +10,7 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="flex h-screen flex-col items-center justify-center bg-dark">
+    <div className="flex h-screen flex-col items-center justify-center bg-light">
       <NameAnimation />
     </div>
 

@@ -1,15 +1,15 @@
 export default function NameAnimation() {
     return (
         <div className="flex relative flex-col items-center justify-center">
-            <p className="font-woodblock text-4xl select-none text-dark drop-shadow-[0_6px_2px_rgba(255,255,255,1)]">
+            <h1 className="font-woodblock lg:text-4xl md:text-3xl sm:text-2xl select-none text-home">
                 {"Ethan Claire".split("").map((char, index) => (
                     <span key={index} className="transition-colors duration-0 delay-500 hover:text-primary hover:delay-0">
                         {char === " " ? "\u00A0" : char}
                     </span>
                 ))}
-            </p>
-            <p className="text-lg -mt-12 mb-2 select-none font-outfit text-secondary">A PORTFOLIO SHOWCASING</p>
-            <p className="text-xl select-none font-outfit text-secondary">Software Development, Assistive Technology, & Human-Computer Interaction</p>
+            </h1>
+            <h2 className="lg:text-lg md:text-md sm:text-sm lg:-mt-12 md:-mt-11 sm:-mt-10 lg:mb-2 md:mb-1 select-none font-outfit text-primary">A PORTFOLIO SHOWCASING</h2>
+            <h2 className="lg:text-xl md:text-md sm:text-sm select-none font-outfit text-primary">Software Development, Assistive Technology, & Human-Computer Interaction</h2>
         </div>
     );
 };
