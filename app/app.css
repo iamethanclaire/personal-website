@@ -15,12 +15,15 @@
   --color-projects: oklch(0.6628 0.179 9.87);
   --color-contact: oklch(0.5138 0 0);
 
+  --color-yellow: oklch(0.9402 0.1762 107.61);
+
 
   /* backgrounds */
   --color-light: oklch(0.9702 0 0);
   --color-dark: oklch(0.01 0 0);
 
   /* sizing */
+  --text-xs: 0.5rem;
   --text-sm: 0.75rem;
   --text-md: 1.25rem;
   --text-lg: 1.5rem;
