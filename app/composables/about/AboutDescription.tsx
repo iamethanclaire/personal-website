@@ -1,10 +1,10 @@
 import EthanImage from '@/public/images/ethan_selfie.jpeg'
-import SkillCard from './SkillCard'
+import SkillDeck from './SkillDeck'
 
 export default function AboutTitle() {
     return (
         // general full page
-        <div className="flex min-h-screen flex-col lg:px-36 md:px-18 sm:px-12 items-start justify-start">
+        <div className="flex min-h-screen flex-col lg:px-28 md:px-18 sm:px-12 items-start justify-start">
             <div className="mb-10">
                 <h2 className="font-chiron text-xl text-about">
                     About Me
@@ -27,7 +27,7 @@ export default function AboutTitle() {
                         </p>
                     </div>
                     <div className="px-10" style={{ width: "700px" }}>
-                        <img src={EthanImage} alt="A picture of Ethan Claire." />
+                        <img src={EthanImage} alt="Ethan Claire sitting at a coffee shop." />
                     </div>
                 </div>
             </div>
@@ -35,13 +35,7 @@ export default function AboutTitle() {
                 <h2 className="font-chiron text-xl text-about">
                     Skills
                 </h2>
-                <div className="flex flex-row justify-center flex-wrap overflow-x-auto px-10">
-                    <SkillCard skillType="Languages" skillWeight={95} skillTitle="C++" specificOne="TEST" specificOneWeight={5} specificTwo="TEST2" specificTwoWeight={5} dateStarted={new Date('2006-02-03')} description="Test" />
-                    <SkillCard skillType="Languages" skillWeight={5} skillTitle="C++" dateStarted={new Date('2006-02-03')} description="Test" />
-                    <SkillCard skillType="Languages" skillWeight={5} skillTitle="C++" dateStarted={new Date('2006-02-03')} description="Test" />
-                    <SkillCard skillType="Languages" skillWeight={5} skillTitle="C++" dateStarted={new Date('2006-02-03')} description="Test" />
-                    <SkillCard skillType="Languages" skillWeight={5} skillTitle="C++" dateStarted={new Date('2006-02-03')} description="Test" />
-                </div>
+                <SkillDeck />
             </div>
             <div className="mb-10">
                 <h2 className="font-chiron text-xl text-about">
