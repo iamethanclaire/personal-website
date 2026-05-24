@@ -11,7 +11,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function About() {
     return (
         <div className="bg-light">
-            <AboutTitle />
+            {/* <AboutTitle /> */}
             <AboutDescription />
         </div>
     );

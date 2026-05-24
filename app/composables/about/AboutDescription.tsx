@@ -5,11 +5,11 @@ import ToolTechGrid from './ToolTechGrid'
 export default function AboutTitle() {
     return (
         // general full page
-        <div className="flex min-h-screen flex-col lg:px-28 md:px-18 sm:px-12 items-start justify-start">
+        <div className="flex min-h-screen flex-col pt-36 lg:px-28 md:px-18 sm:px-12 items-start justify-start">
             <div className="mb-10">
-                <h2 className="font-chiron text-xl text-about">
+                <h1 className="font-woodblock text-2xl text-about">
                     About Me
-                </h2>
+                </h1>
                 <div className="flex align-top lg:flex-row md:flex-col">
                     <div className="px-10 flex flex-col" style={{ width: "700px" }}>
                         <p className="font-outfit text-lg text-primary mb-4">

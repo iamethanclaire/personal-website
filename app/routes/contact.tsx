@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import ContactTitle from "../composables/contact/ContactTitle"
+import ContactBody from "../composables/contact/ContactBody"
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -9,8 +10,9 @@ export function meta({ }: Route.MetaArgs) {
 }
 export default function Contact() {
     return (
-        <div className="flex h-screen flex-col items-center justify-center bg-light">
-            <ContactTitle />
+        <div>
+            {/* <ContactTitle /> */}
+            <ContactBody />
         </div>
     );
 };
