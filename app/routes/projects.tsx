@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import ProjectsTitle from "../composables/projects/ProjectsTitle";
+import ProjectsBody from "../composables/projects/ProjectsBody";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -11,8 +12,9 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Projects() {
     return (
-        <div className="flex h-screen flex-col items-center justify-center bg-light">
-            <ProjectsTitle />
+        <div>
+            <ProjectsBody />
+            {/* <ProjectsTitle /> */}
         </div>
     );
 };
