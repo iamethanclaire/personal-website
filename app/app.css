@@ -40,6 +40,10 @@
   --font-outfit: Outfit, "sans-serif";
   --font-chiron: Chiron, "serif";
   --font-woodblock: WoodBlock, "sans-serif";
+
+  /* animation */
+  --animate-marquee-forward: marquee-forward 20s linear infinite;
+  --animate-marquee-backward: marquee-backward 20s linear infinite;
 }
 
 @font-face{
@@ -68,4 +72,13 @@ html, body {
 
 .texture {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E");
+}
+
+@keyframes marquee-forward {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+@keyframes marquee-backward {
+    from { transform: translateX(0); }
+    to   { transform: translateX(50%); }
 }
