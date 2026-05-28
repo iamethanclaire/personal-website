@@ -3,11 +3,11 @@ import ProjectCard from "./ProjectCard"
 
 export default function ProjectsBody() {
     return (
-        <div className="flex min-h-screen flex-col pt-36 lg:px-28 md:px-18 sm:px-12 bg-light">
+        <div className="flex min-h-screen flex-col pt-36 lg:px-28 md:px-18 sm:px-12 pb-16 bg-light">
             <h1 className="font-woodblock text-2xl text-about items-start justify-start text-projects">
                 Projects
             </h1>
-            <div className="flex flex-row gap-4 items-center justify-center">
+            <div className="flex flex-row gap-4 items-center justify-center flex-wrap overflow-y-none">
                 <ProjectCard
                     projectPhoto="/images/projects/adapt_project.png"
                     projectTitle="ADAPT"
@@ -29,10 +29,27 @@ export default function ProjectsBody() {
                 <ProjectCard
                     projectPhoto="/images/projects/xrb_project.png"
                     projectTitle="XRB"
-                    projectDescription="This project is a web-based application designed for  University of Nevada, 
+                    projectDescription="XRB is a web-based application designed for  University of Nevada, 
                     Reno’s Physics Department that supports visualisations of X-ray binary (XRB) data and supplemental 
                     data querying, analysis, and post-processing."
                     projectSkills="TypeScript, HTML/CSS, Docker" 
+                    projectLink="https://github.com/iamethanclaire/xrb"
+                />
+                <ProjectCard
+                    projectPhoto="/images/projects/sdg_project.png"
+                    projectTitle="Strictly Dominant Gaming"
+                    projectDescription="Strictly Dominant Gaming is a video game company centered around creating
+                                        both engaging and educational games. SDG won the 2019 Congressional App Challenge
+                                        with Prime Target."
+                    projectSkills="C#, Unity, SwiftUI" 
+                    projectLink="https://strictlydominant.wixsite.com/home"
+                />
+                <ProjectCard
+                    projectPhoto="/images/projects/udephi_project.png"
+                    projectTitle="Udephi"
+                    projectDescription="Udephi is a software company centered around providing the best user experience
+                    without collecting user data."
+                    projectSkills="SwiftUI, HealthKit, CoreML" 
                     projectLink="https://github.com/iamethanclaire/xrb"
                 />
             </div>
