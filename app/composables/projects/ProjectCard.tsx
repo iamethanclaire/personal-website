@@ -4,7 +4,7 @@ export default function ProjectCard({ projectPhoto, projectTitle, projectDescrip
     { projectPhoto: string, projectTitle: string, projectDescription: string, projectSkills: string, projectLink: string }) {
     return (
         <NavLink to={projectLink} target="_blank">
-            <div className="flex flex-col rounded-3xl shadow-md border-1 border-border" style={{ height: "600px", width: "500px" }}>
+            <div className="flex flex-col rounded-3xl shadow-md border-1 border-border transition-transform hover:-translate-y-[5px]" style={{ height: "600px", width: "500px" }}>
                 {/* Photo */}
                 <div className="bg-light rounded-t-3xl" style={{ height: "250px" }}>
                     <img src={projectPhoto} alt="Test" className="w-full h-full object-cover rounded-t-3xl" />
