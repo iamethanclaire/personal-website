@@ -8,7 +8,7 @@ This website is created using the following tech stack:
 -   Docker
 -   Github Pages
 
-[![See the Website Here](https://iamethanclaire.github.io/personal-website/projects)]
+[![Visit Website](https://img.shields.io/badge/Visit_Website-iamethanclaire.github.io-blue?style=for-the-badge)](https://iamethanclaire.github.io/personal-website)
 
 ## Pages
 
