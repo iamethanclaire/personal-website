@@ -8,7 +8,7 @@ This website is created using the following tech stack:
 -   Docker
 -   Github Pages
 
-[![See the Website Here](https://iamethanclaire.github.io/personal-website/projects)]([https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default](https://iamethanclaire.github.io/personal-website/projects))
+[![See the Website Here](https://iamethanclaire.github.io/personal-website/projects)]
 
 ## Pages
 
