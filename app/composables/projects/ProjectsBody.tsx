@@ -50,7 +50,7 @@ export default function ProjectsBody() {
                     projectDescription="Udephi is a software company centered around providing the best user experience
                     without collecting user data."
                     projectSkills="SwiftUI, HealthKit, CoreML" 
-                    projectLink="https://github.com/iamethanclaire/xrb"
+                    projectLink="https://www.udephi.com"
                 />
             </div>
         </div>

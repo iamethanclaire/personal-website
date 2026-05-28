@@ -13,6 +13,9 @@ export default function SkillCard({ skillType, skillWeight, skillTitle, skillPho
         case "Management":
             skillColor = '#f07171';
             break;
+        case "Frameworks":
+            skillColor = '#ece00c';
+            break;
     }
 
     return (

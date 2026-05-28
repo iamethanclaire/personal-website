@@ -146,6 +146,30 @@ export default function SkillDeck() {
                 dateStarted={new Date('2021-08-15')}
                 description="Test"
             />
+            <SkillCard
+                skillType="Frameworks"
+                skillWeight={90}
+                skillTitle="Vue"
+                skillPhoto="/images/skills/vue_image.jpg"
+                specificOne="Composition API"
+                specificOneWeight={90}
+                specificTwo="Performance Optimization"
+                specificTwoWeight={90}
+                dateStarted={new Date('2024-08-15')}
+                description="Test"
+            />
+            <SkillCard
+                skillType="Frameworks"
+                skillWeight={90}
+                skillTitle="React"
+                skillPhoto="/images/skills/react_image.png"
+                specificOne="CBA"
+                specificOneWeight={90}
+                specificTwo="State Management"
+                specificTwoWeight={90}
+                dateStarted={new Date('2024-08-15')}
+                description="Test"
+            />
 
         </div>
     );

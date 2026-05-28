@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import NameAnimation from "../composables/home/NameAnimation"
+import HomeTitle from "../composables/home/HomeTitle"
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -11,7 +11,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (
     <div className="flex h-screen flex-col items-center justify-center bg-light">
-      <NameAnimation />
+      <HomeTitle />
     </div>
 
   );
