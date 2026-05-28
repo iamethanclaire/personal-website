@@ -22,7 +22,7 @@ export default function SkillCard({ skillType, skillWeight, skillTitle, skillPho
 
     return (
 
-        <div className="flex bg-yellow m-4 rounded-3xl transition-transform hover:-translate-y-[5px]" style={{ height: "375px", width: "275px" }}>
+        <div className="flex bg-yellow m-4 rounded-3xl transition-transform hover:-translate-y-[5px]" style={{ height: "300px", width: "220px" }}>
             <div className="relative flex justify-start flex-col items-start m-3 flex-1" style={{ backgroundColor: skillColor }}>
                 <img src={asset("/images/skills/texture.png")} alt="texture" className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10 opacity-25" />
                 <div className="relative z-20">
@@ -31,7 +31,7 @@ export default function SkillCard({ skillType, skillWeight, skillTitle, skillPho
                         <p className="mx-4 text-md font-outfit font-bold truncate">{skillTitle}</p>
                         <p className="mx-4 text-md font-outfit">{skillWeight}</p>
                     </div>
-                    <div className="flex mx-4 flex bg-yellow flex-1 rounded-md self-stretch shadow-md" style={{ height: "125px" }}>
+                    <div className="flex mx-4 flex bg-yellow flex-1 rounded-md self-stretch shadow-md" style={{ height: "100px" }}>
                         <div className="flex m-1 bg-light flex-1 self-stretch overflow-hidden">
                             <img src={skillPhoto} alt={skillTitle} className="w-full h-full object-cover" />
                         </div>

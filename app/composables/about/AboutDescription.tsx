@@ -5,13 +5,13 @@ export default function AboutTitle() {
     const EthanImage = import.meta.env.BASE_URL + "images/ethan_selfie.jpeg";
     return (
         // general full page
-        <div className="flex min-h-screen flex-col pt-36 lg:px-28 md:px-18 sm:px-12 items-start justify-start">
+        <div className="flex min-h-screen flex-col pt-36 lg:px-28 md:px-18 sm:px-12 justify-start">
             <div className="mb-10">
                 <h1 className="font-woodblock text-2xl text-about">
                     About Me
                 </h1>
-                <div className="flex align-top lg:flex-row md:flex-col">
-                    <div className="px-10 flex flex-col" style={{ width: "700px" }}>
+                <div className="flex align-top w-full lg:flex-row md:flex-col">
+                    <div className="px-10 flex flex-col" style={{ width: "560px" }}>
                         <p className="font-outfit text-lg text-primary mb-4">
                             My name is Ethan Claire. I'm a Computer Science and Engineering graduate from the University of Nevada, Reno,
                             heading to Georgia Tech for my master's in CS with a focus in Machine Learning. During my undergraduate years
@@ -27,12 +27,12 @@ export default function AboutTitle() {
                             I am committed to creating software that makes a meaningful difference in people's lives.
                         </p>
                     </div>
-                    <div className="px-10" style={{ width: "700px" }}>
+                    <div className="px-10" style={{ width: "560px" }}>
                         <img src={EthanImage} alt="Ethan Claire sitting at a coffee shop." />
                     </div>
                 </div>
             </div>
-            <div className="mb-10">
+            <div className="mb-10 lg:px-28 md:px-18 sm:px-12">
                 <h2 className="font-chiron text-xl text-about">
                     Skills
                 </h2>

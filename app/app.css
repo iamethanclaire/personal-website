@@ -70,6 +70,7 @@
 }
 
 html, body {
+  font-size: 80%;
   overflow-y: auto;
   overflow-x: hidden;
 }
