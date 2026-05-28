@@ -1,0 +1,1 @@
+function e(e){return`/personal-website/`+e.replace(/^\//,``)}export{e as t};
