@@ -1,3 +1,4 @@
 export function asset(path: string): string {
-  return import.meta.env.BASE_URL + path.replace(/^\//, '');
+  const base = import.meta.env.PROD ? '/personal-website/' : '/';
+  return base + path.replace(/^\//, '');
 }
