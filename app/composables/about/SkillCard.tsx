@@ -1,3 +1,5 @@
+import { asset } from '@/app/utils/assets';
+
 export default function SkillCard({ skillType, skillWeight, skillTitle, skillPhoto, specificOne, specificOneWeight, specificTwo, specificTwoWeight, dateStarted, description }:
     { skillType: string, skillWeight: number, skillTitle: string, skillPhoto: string, specificOne: string, specificOneWeight: number, specificTwo: string, specificTwoWeight: number, dateStarted: Date, description: string }) {
     const yearsOfExperience = Math.floor((new Date().getTime() - dateStarted.getTime()) / (1000 * 60 * 60 * 24 * 365.25));
@@ -22,7 +24,7 @@ export default function SkillCard({ skillType, skillWeight, skillTitle, skillPho
 
         <div className="flex bg-yellow m-4 rounded-3xl transition-transform hover:-translate-y-[5px]" style={{ height: "375px", width: "275px" }}>
             <div className="relative flex justify-start flex-col items-start m-3 flex-1" style={{ backgroundColor: skillColor }}>
-                <img src="/images/skills/texture.png" alt="texture" className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10 opacity-25" />
+                <img src={asset("/images/skills/texture.png")} alt="texture" className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10 opacity-25" />
                 <div className="relative z-20">
                     <p className="mx-4 mt-2 text-xs font-outfit">{skillType}</p>
                     <div className="flex flex-row -mt-1 justify-between w-full">
