@@ -1,8 +1,8 @@
-import EthanImage from '@/public/images/ethan_selfie.jpeg'
 import SkillDeck from './SkillDeck'
-import ToolTechGrid from './ToolTechGrid'
+// import ToolTechGrid from './ToolTechGrid'
 
 export default function AboutTitle() {
+    const EthanImage = import.meta.env.BASE_URL + "images/ethan_selfie.jpeg";
     return (
         // general full page
         <div className="flex min-h-screen flex-col pt-36 lg:px-28 md:px-18 sm:px-12 items-start justify-start">

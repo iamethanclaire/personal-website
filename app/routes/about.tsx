@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import AboutTitle from "../composables/about/AboutTitle"
+// import AboutTitle from "../composables/about/AboutTitle"
 import AboutDescription from "../composables/about/AboutDescription"
 
 export function meta({ }: Route.MetaArgs) {

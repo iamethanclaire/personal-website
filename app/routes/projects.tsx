@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import ProjectsTitle from "../composables/projects/ProjectsTitle";
+// import ProjectsTitle from "../composables/projects/ProjectsTitle";
 import ProjectsBody from "../composables/projects/ProjectsBody";
 
 export function meta({ }: Route.MetaArgs) {

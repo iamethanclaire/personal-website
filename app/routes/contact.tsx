@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import ContactTitle from "../composables/contact/ContactTitle"
+// import ContactTitle from "../composables/contact/ContactTitle"
 import ContactBody from "../composables/contact/ContactBody"
 
 export function meta({ }: Route.MetaArgs) {
