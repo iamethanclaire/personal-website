@@ -13,7 +13,7 @@ import Navbar from "./composables/Navbar";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
-  { rel: "icon", type: "image/png", href: `${import.meta.env.PROD ? '/personal-website/' : '/'}favicon.png` },
+  { rel: "icon", href: `${import.meta.env.PROD ? '/personal-website/' : '/'}favicon.ico` },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
