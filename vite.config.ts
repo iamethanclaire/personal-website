@@ -1,9 +1,10 @@
 import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
-import path from 'path'
+import path from 'path';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/personal-website/' : '/',
   plugins: [tailwindcss(), reactRouter()],
   resolve: {
     tsconfigPaths: true,
@@ -11,4 +12,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, '.'),
     },
   },
-});
+}));
